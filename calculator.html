@@ -1,0 +1,89 @@
+<html>
+<head>
+<title> Calculator </title>
+<style>
+body
+{
+padding: 5px;
+margin: 5px;
+}
+
+.but
+{
+width: 20px;
+background-color:#bce3e5;
+border: 1px solid #034144;
+margin-left: 10px;
+border-radius: 10px;
+font-size: 10px;
+}
+.result
+{
+width: 30%;
+background-color:#bce3e5;
+border: 1px solid #034144;
+padding: 5px;
+margin: 5px;
+}
+input:hover
+{
+font-size:12px;
+}
+
+</style>
+</head>
+<body>
+<div class = "calculator">
+<form name="calc">
+  <div class="display">
+<input type="text" name="result"></input>
+  </div>
+  <div class="numbers">
+  <input type="button" value="1" onclick="calc.result.value = calc.result.value +'1'"  onclick="calc.result.value = calc.result.value +'1'" class="but">
+  </input>
+  <input type="button" value="2"  onclick="calc.result.value = calc.result.value +'2'" class="but">
+  </input>
+  <input type="button" value="3"  onclick="calc.result.value = calc.result.value +'3'" class="but">
+  </input>
+  <input type="button" value="+"  onclick="calc.result.value = calc.result.value +'+'" class="but">
+  </input>
+    <br> <br>
+  <input type="button" value="4"  onclick="calc.result.value = calc.result.value +'4'" class="but">
+  </input>
+  <input type="button" value="5"  onclick="calc.result.value = calc.result.value +'5'" class="but">
+  </input>
+  <input type="button" value="6"  onclick="calc.result.value = calc.result.value +'6'" class="but">
+  </input>
+  <input type="button" value="-"  onclick="calc.result.value = calc.result.value +'-'" class="but">
+  </input>
+    <br> <br>
+    <input type="button" value="7"  onclick="calc.result.value = calc.result.value +'7'" class="but">
+  </input>
+  <input type="button" value="8"  onclick="calc.result.value = calc.result.value +'8'" class="but">
+  </input>
+  <input type="button" value="9"  onclick="calc.result.value = calc.result.value +'9'" class="but">
+  </input>
+  <input type="button" value="*"  onclick="calc.result.value = calc.result.value +'*'" class="but">
+  </input>
+    <br> <br>
+  <input type="button" value="0"  onclick="calc.result.value = calc.result.value +'0'" class="but">
+  </input>
+  <input type="button" value="."  onclick="calc.result.value = calc.result.value +'.'" class="but">
+  </input>
+  <input type="button" value="="  onclick="calc.result.value =eval(calc.result.value)" class="but">
+  </input>
+  <input type="button" value="/"  onclick="calc.result.value = calc.result.value +'/'" class="but">
+<input type="button" value="Clear"  onclick="calc.result.value =''" class="clear">
+  </input>
+    <br> <br>
+  </div>
+</div>
+
+</form>
+
+
+</div>
+
+</body>
+</html>
+
